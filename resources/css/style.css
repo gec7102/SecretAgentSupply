@@ -1,7 +1,8 @@
 /*ROOT, BODY, & SHARED*/
 
 body {
-  width: 960px;
+  width: 100%;
+  /*width: 960px;*/
 }
 
 /*html {
@@ -27,6 +28,7 @@ nav,
   font-size: 1rem;
   color: white;
 }
+
 
 
 /*HEADER*/
@@ -80,10 +82,10 @@ header {
 
 nav {
   width: 100%;
+  background-color: firebrick;
 }
 
 .full-nav {
-  background-color: firebrick;
   color: white;
   padding-top: 0.75rem;
   padding-bottom: 0.75rem;
@@ -171,4 +173,35 @@ footer {
   align-items: center;
   height: 5rem;
   width: 100%;
+}
+
+
+/*SCREEN SIZE ADJUSTMENTS*/
+
+
+/*if screen is larger than 1024px*/
+@media only screen and (min-width: 1024px) {
+
+  .header-container,
+  .banner-container,
+  .full-nav,
+  .featured-products,
+  .find-container,
+  .footer-container {
+    max-width: 960px;
+    margin: auto;
+  }
+
+  .banner {
+    margin-top: 9rem;
+    margin-left: 0rem;
+    margin-right: auto;
+    padding-top: 2rem;
+    padding-bottom: 2rem;
+    padding-left: 3rem;
+    background-color: black;
+    width: 20rem;
+  }
+
+
 }
