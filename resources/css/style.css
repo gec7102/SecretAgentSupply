@@ -2,7 +2,6 @@
 
 body {
   width: 100%;
-  /*width: 960px;*/
 }
 
 /*html {
@@ -11,7 +10,6 @@ body {
 
 html,
 body {
-  margin: 0px;
   font-size: 18px;
   font-family: Helvetica;
   display: flex;
@@ -97,6 +95,9 @@ nav {
 but will be on small screens*/
 .menu {
   display: none;
+  color: white;
+  padding-top: 0.75rem;
+  padding-bottom: 0.75rem;
 }
 
 
@@ -156,13 +157,6 @@ but will be on small screens*/
   padding-left: 2rem;
 }
 
-.hours {
-
-}
-
-.location {
-
-}
 
 /*FOOTER*/
 
@@ -202,6 +196,98 @@ footer {
     background-color: black;
     width: 20rem;
   }
+}
 
+/*if screen is between 470px and 1024px*/
+
+@media only screen and (min-width: 470px) and (max-width: 1024px) {
+  .full-nav{
+    display: none;
+  }
+
+  .menu {
+    display: flex;
+    justify-content: center;
+  }
+
+  .glasses {
+    display: none;
+  }
+
+  .product {
+    width: 47%;
+  }
+}
+
+/*if screen is smaller than 470px;*/
+
+@media only screen and (max-width: 470px) {
+
+  .main-banner {
+    height: 15rem;
+  }
+
+  .banner {
+    width: 100%;
+    margin-top: 10rem;
+    padding-top: 1rem;
+    padding-bottom: 1rem;
+    padding-left: 2rem;
+  }
+
+  .arrival {
+    font-size: 0.77rem;
+    font-weight: bold;
+  }
+
+  .new-product {
+    font-size: 1rem;
+    font-weight: bold;
+  }
+
+  .full-nav{
+    display: none;
+  }
+
+  .menu {
+    display: flex;
+    justify-content: center;
+  }
+
+  .watch {
+    display: none;
+  }
+
+  .glasses {
+    display: none;
+  }
+
+  .featured-products {
+    display: flex;
+    justify-content: center;
+    width: 100%;
+  }
+
+  .product {
+    width: 90%;
+  }
+
+  .find-container {
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+  }
+
+  .find-us {
+    width: 90%;
+    display: flex;
+    flex-direction: column;
+    margin-bottom: 0.5rem;
+  }
+
+  footer{
+    justify-content: center;
+  }
 
 }
